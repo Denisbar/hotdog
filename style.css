@@ -1,63 +1,70 @@
 body{
     margin: 0;
+    max-width: 100%;
 }
-
 #img_hotdog{
     width: 100%;
     height: auto;
 }
-
+#instagram{
+    position: absolute;
+    right: 20pt;
+    top: 10pt;
+}
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 li{
     display: inline;
     padding-right: 77pt;
 }
-
-a{
+li a{
     text-decoration: none;
     font-family: 'OpenSans', sans-serif;
     font-size: 20pt;
     font-weight: bold;
     color: #2e2e2e;
 }
-
+li a:hover{
+    color: #555559;
+}
+header{
+    position: relative;
+}
 #navigation{
     width: 100%;
     height: auto;
     text-align: center;
-    padding-top: 20pt;
-    padding-bottom: 20px;
+    padding-top: 26pt;
+    padding-bottom: 26pt;
     margin-bottom: 5px;
     box-shadow: 0 2px 6px 1px #e8e7e7;
 }
-
 #more_dogs{
     width: 100%;
-    height: 350pt;
+    height: 690pt;
     background-color: #fbfafa;
 }
-
 #inner_more_dogs{
     width: 100%;
     height: 200pt;
     text-align: center;
+    padding-top: 115pt;
 }
-
 #hotdog_slogan{
     font-family: 'OpenSans', sans-serif;
     font-size: 56pt;
     color: #555559;
+    word-wrap: break-word;
+    width: 100%;
+    padding-top: 35pt;
+    padding-bottom: 80pt;
 }
-
 #button{
     width: 310pt;
     height: 65pt;
-    background-color: blue;
     margin: 0 auto;
     border-radius: 10px;
     background-color: #286782;
@@ -65,30 +72,353 @@ a{
     font-family: 'OpenSans', sans-serif;
     font-size: 20pt;
 }
-
+#button{
+    cursor: pointer;
+}
 .menu{
     width: 100%;
     height: auto;
     display: flex;
     background-color: #ffffff;
     margin: 0;
+    display: flex;
 }
-
 .menu_description{
     float: left;
     width: 100%;
     flex-grow: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
+.title-box{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+    color: #555559;
+}
+.description-box{
+    word-wrap: break-word;
+    width: 100%;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 18pt;
+    color: #555559;
+}
 .menu_img{
     width: 100%;
     flex-grow: 0;
-    height: 540px; /* маленький зазор между картинками */
+    height: 540px;
 }
-
 footer{
     width: 100%;
-    height: 76pt;
-    background-color: red;
+    height: 75pt;
+    background-color: #efefef;
     margin: 0;
+    flex: 0 0 auto;
+}
+footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-col{
+    padding-left: 20pt;
+    padding-top: 30pt;
+}
+.footer-col-contact{
+    padding-left: 20pt;
+    padding-top: 30pt;
+    padding-right: 20pt;
+}
+.footer-col span{
+    font-size: 14pt;
+    color: #555559;
+    font-family: 'OpenSans', sans-serif;
+}
+.footer-col-contact span a{
+    font-size: 14pt;
+    color: #555559;
+    text-decoration: none;
+    font-family: 'OpenSans', sans-serif;
+    padding-left: 15pt;
+}
+.footer-col-contact span{
+    font-size: 14pt;
+    color: #555559;
+    text-decoration: none;
+    font-family: 'OpenSans', sans-serif;
+}
+@media (max-width: 360px){
+    #hotdog_slogan{
+        font-size: 12pt;
+        padding-top: 35pt;
+        padding-bottom: 50pt;
+        font-family: 'OpenSans', sans-serif;
+    }
+    body{
+        max-width: 99.99%;
+    }
+    #button{
+        width: 85%;
+        height: 50pt;
+        font-size: 12pt;
+    }
+    #more_dogs{
+        height: 320pt;
+    }
+    #inner_more_dogs{
+        padding-top: 20pt;
+    }
+    .footer-col{
+        padding-left: 10pt;
+        padding-top: 15pt;
+    }
+    .footer-col span{
+        font-size: 10pt;
+        font-family: 'OpenSans', sans-serif;
+    }
+    .footer-col-contact{
+        padding-left: 15pt;
+        padding-top: 15pt;
+        padding-right: 20pt;
+    }
+    .footer-col-contact span{
+        font-size: 10pt;
+        font-family: 'OpenSans', sans-serif;
+    }
+    .footer-col-contact span a{
+        font-size: 10pt;
+        padding-left: 0pt;
+    }
+    .description-box{
+        font-size: 10pt;
+        width: 95%;
+        padding-left: 5pt;
+    }
+    .title-box{
+        font-size: 12pt;
+        width: 95%;
+        padding-left: 5pt;
+    }
+    .dash{
+        display: none;
+    }
+}
+@media (max-width: 412px){
+    #hotdog_slogan{
+        font-size: 16pt;
+        padding-top: 35pt;
+        padding-bottom: 50pt;
+        font-family: 'OpenSans', sans-serif;
+    }
+    body{
+        max-width: 99.99%;
+    }
+    #button{
+        width: 85%;
+        height: 50pt;
+        font-size: 12pt;
+    }
+    #more_dogs{
+        height: 320pt;
+    }
+    #inner_more_dogs{
+        padding-top: 20pt;
+    }
+    .footer-col{
+        padding-left: 10pt;
+        padding-top: 15pt;
+    }
+    .footer-col span{
+        font-size: 12pt;
+        font-family: 'OpenSans', sans-serif;
+    }
+    .footer-col-contact{
+        padding-left: 15pt;
+        padding-top: 15pt;
+        padding-right: 20pt;
+    }
+    .footer-col-contact span{
+        font-size: 12pt;
+        font-family: 'OpenSans', sans-serif;
+    }
+    .footer-col-contact span a{
+        font-size: 12pt;
+        padding-left: 0pt;
+    }
+    .description-box{
+        font-size: 11pt;
+        width: 95%;
+        padding-left: 5pt;
+    }
+    .title-box{
+        font-size: 14pt;
+        width: 95%;
+        padding-left: 5pt;
+    }
+    .dash{
+        display: none;
+    }
+}
+@media (max-width: 412px){
+    #hotdog_slogan{
+        font-size: 14pt;
+        padding-top: 35pt;
+        padding-bottom: 50pt;
+        font-family: 'OpenSans', sans-serif;
+    }
+    body{
+        max-width: 99.99%;
+    }
+    #button{
+        width: 85%;
+        height: 50pt;
+        font-size: 12pt;
+    }
+    #more_dogs{
+        height: 320pt;
+    }
+    #inner_more_dogs{
+        padding-top: 20pt;
+    }
+    .footer-col{
+        padding-left: 10pt;
+        padding-top: 15pt;
+    }
+    .footer-col span{
+        font-size: 12pt;
+        font-family: 'OpenSans', sans-serif;
+    }
+    .footer-col-contact{
+        padding-left: 15pt;
+        padding-top: 15pt;
+        padding-right: 20pt;
+    }
+    .footer-col-contact span{
+        font-size: 12pt;
+        font-family: 'OpenSans', sans-serif;
+    }
+    .footer-col-contact span a{
+        font-size: 12pt;
+        padding-left: 0pt;
+    }
+    .description-box{
+        font-size: 10pt;
+        width: 95%;
+        padding-left: 5pt;
+    }
+    .title-box{
+        font-size: 12pt;
+        width: 95%;
+        padding-left: 5pt;
+    }
+    .dash{
+        display: none;
+    }
+    footer .container{
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width: 414px){
+    #hotdog_slogan{
+        font-size: 14pt;
+        padding-top: 35pt;
+        padding-bottom: 50pt;
+        font-family: 'OpenSans', sans-serif;
+    }
+    body{
+        max-width: 99.99%;
+    }
+    #button{
+        width: 85%;
+        height: 50pt;
+        font-size: 12pt;
+    }
+    #more_dogs{
+        height: 320pt;
+    }
+    #inner_more_dogs{
+        padding-top: 20pt;
+    }
+    .footer-col{
+        padding-left: 10pt;
+        padding-top: 15pt;
+    }
+    .footer-col span{
+        font-size: 12pt;
+        font-family: 'OpenSans', sans-serif;
+    }
+    .footer-col-contact{
+        padding-left: 15pt;
+        padding-top: 15pt;
+        padding-right: 20pt;
+    }
+    .footer-col-contact span{
+        font-size: 12pt;
+        font-family: 'OpenSans', sans-serif;
+    }
+    .footer-col-contact span a{
+        font-size: 12pt;
+        padding-left: 0pt;
+    }
+    .description-box{
+        font-size: 10pt;
+        width: 95%;
+        padding-left: 5pt;
+    }
+    .title-box{
+        font-size: 12pt;
+        width: 95%;
+        padding-left: 5pt;
+    }
+    .dash{
+        display: none;
+    }
+    footer .container{
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width: 800px){
+    li{
+        display: block;
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+}
+@media (min-width: 1590px){
+    .dash{
+        float: left;
+        margin-left: 10px;
+        padding-top: 3pt;
+    }
+    .description-box{
+        width: 75%;
+        padding-left: 40pt;
+    }
+    .title-box{
+        width: 75%;
+        padding-left: 40pt;
+    }
+}
+@media (min-width: 413px){
+    .dash{
+        float: left;
+        margin-left: 10px;
+        padding-top: 3pt;
+    }
+    .description-box{
+        width: 75%;
+        padding-left: 40pt;
+    }
+    .title-box{
+        width: 75%;
+        padding-left: 40pt;
+    }
 }
